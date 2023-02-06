@@ -1,51 +1,113 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 body {
-    background-color: black;
+    background: black;
+    color: white;
 }
 
 #header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: gray;
+    background-image: url(/assets/images/Vector_2640.jpg);
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
 }
 
 #header h1 {
-    color: rgb(248, 242, 242);
+    color: white;
     font-weight: 800;
+    text-decoration: underline;
     font-family: 'Poppins' sans-serif;
+    position: absolute;
+
+    font-size: 250%;
+
 }
 
 #header ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: aqua;
+    justify-content: flex-end;
+
 }
 
 #header ul li {
-    list-style: inside;
-    margin-left: 20px;
+    list-style: none;
+    margin: 20px;
 }
 
 #header ul li a {
     padding: 2px;
     color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 #header ul li a:hover {
-    background-color: green;
+    background-color: black;
     font-weight: bolder;
-    color: black;
+    transition: 0.5s;
+}
+
+
+#about-me-text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#About-me {
+    text-align: center;
+}
+
+.aside {
+    flex: 0 0 50%;
+}
+
+#Horiseon-section {
+    background-image: url("../images/Horisonmarketingpreview.png");
+    background-size: cover;
+    flex-basis: 1000px;
+}
+
+#Landing-section {
+    background-image: url("../images/Landingpagepic.png");
+    background-size: cover;
+
+}
+
+#contact-section {
+    background-image: url("../images/Pictureonhorse.JPG");
+    background-size: cover;
+
+
+}
+
+.section-text {
+    display: flex;
+    align-items: flex-end;
+    flex: 0 0 70%;
+    height: 500px;
+    margin: 2%;
+}
+
+.picture-text {
+    background-color: black;
+
+    flex: 0 0 33%;
+    padding: 3%;
+    margin: 2%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    main {
+        flex-direction: column;
+    }
 }
