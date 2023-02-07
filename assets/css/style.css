@@ -70,6 +70,7 @@ body {
     flex-basis: 1000px;
 }
 
+
 #Landing-section {
     background-image: url("../images/Landingpagepic.png");
     background-size: cover;
@@ -99,7 +100,10 @@ body {
     margin: 2%;
 }
 
-
+.picture-text a {
+    color: white;
+    text-decoration: none;
+}
 
 
 
