@@ -6,13 +6,14 @@ main {
 body {
     background: black;
     color: white;
+
 }
 
 #header {
     background-image: url(/assets/images/Vector_2640.jpg);
     height: 40vh;
-    background-position: center;
-    background-size: cover;
+
+
 }
 
 #header h1 {
@@ -72,7 +73,7 @@ body {
 
 
 #Landing-section {
-    background-image: url("../images/Landingpagepic.png");
+    background-image: url("../images/homepage-screenshot.png");
     background-size: cover;
 
 }
